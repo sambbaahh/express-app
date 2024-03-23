@@ -9,9 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Install dependencies
-        run: npm install
 
   publish-docker-hub:
     name: Publish image to Docker Hub
@@ -31,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: devopsdockeruh/coursepage:latest
+          tags: sambbaahh/express-app
